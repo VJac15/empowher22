@@ -22,6 +22,8 @@ const NavBar = () => {
   const { user, isLoading } = useUser();
   const toggle = () => setIsOpen(!isOpen);
 
+  // TODO: This needs to be fixed, navbar doesn't look good currently
+
   return (
     <div className="nav-container" data-testid="navbar" class="nav-container">
       <Navbar light expand="md">
@@ -54,6 +56,11 @@ const NavBar = () => {
               <NavItem>
                 <PageLink href = "workshops" className="nav-link" testId = "navbar-abt">
                   WORKSHOPS
+                </PageLink>
+              </NavItem>
+              <NavItem>
+                <PageLink href = "winners" className="nav-link" testId = "navbar-abt">
+                  WINNERS
                 </PageLink>
               </NavItem>
               {user && (

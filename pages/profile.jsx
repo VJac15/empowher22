@@ -4,7 +4,9 @@ import { useUser, withPageAuthRequired } from '@auth0/nextjs-auth0';
 
 import Loading from '../components/Loading';
 import ErrorMessage from '../components/ErrorMessage';
-import Highlight from '../components/Highlight';
+//import Highlight from '../components/Highlight';
+
+//<Highlight>{JSON.stringify(user, null, 2)}</Highlight>
 
 function Profile() {
   const { user, isLoading } = useUser();
@@ -32,7 +34,7 @@ function Profile() {
             </Col>
           </Row>
           <Row data-testid="profile-json">
-            <Highlight>{JSON.stringify(user, null, 2)}</Highlight>
+            
           </Row>
         </>
       )}
