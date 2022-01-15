@@ -114,7 +114,7 @@ export default function Index() {
         </div>
       </div>
 
-      <div class = "col-lg-3 col-md-6 col-sm-6 col-xs-12">
+      <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class = "team__card-margin">
           <div class="team__card">
             <img class="team__card-image" src="empowher-assets/img/team/siri.png" width="140" height="143" alt="Siri Ponna"/><p class="team__card-name-text">Siri Ponna</p>
