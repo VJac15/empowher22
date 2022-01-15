@@ -6,18 +6,18 @@ const Footer = () => (
       <div class = "container">
         <div class = "row">
           <div class = "col-lg-3 col-md-3 col-sm-6 col-xs-12 segment-one md-mb-30 sm-mb-30">
-            <img src = "empowher-assets/img/logo.png"/>
+            <img src = {"../empowher-assets/img/logo.png"}/>
             <h3>MetroHacks EmpowHer</h3>
             <p>A year-long competition for high school girls to create a STEM project that benefits their community!</p>
           </div>
           <div class = "col-lg-3 col-md-3 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30">
             <h3>Important Links</h3>
             <ul>
-              <li><a href = "index.html">HOME</a></li>
-              <li><a href = "about.html">ABOUT</a></li>
-              <li><a href = "competition.html">COMPETITION</a></li>
-              <li><a href="workshops.html" >WORKSHOPS</a></li>
-              <li><a href = "#">WINNERS</a></li>
+              <li><a href = "/">HOME</a></li>
+              <li><a href = "/about">ABOUT</a></li>
+              <li><a href = "/comp">COMPETITION</a></li>
+              <li><a href="/workshops" >WORKSHOPS</a></li>
+              <li><a href = "/winners">WINNERS</a></li>
               <li><a href = "empowher-assets/files/submission-guidelines.pdf">SUBMISSION GUIDELINES</a></li>
             </ul>
           </div>
@@ -53,14 +53,14 @@ const Footer = () => (
                   <div id="mc_embed_signup_scroll">
 
                     <div class="mc-field-group">
-                      <input class = "email-txtbox" placeholder="Email" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"/>
+                      <input class = "email-txtbox" placeholder="Email" type="email" defaultValue="" name="EMAIL" id="mce-EMAIL"/>
                     </div>
                     <div id="mce-responses" class="clear">
                       <div class="response" id="mce-error-response"></div>
                       <div class="response" id="mce-success-response"></div>
                     </div>
-                    <div aria-hidden="true"><input type="text" name="b_70868a220aae369c6d345246a_38fe2c6f18" tabindex="-1" value=""/></div>
-                    <div class="clear"><input class = "submit-btn" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"/></div>
+                    <div class = "subscribe-form" aria-hidden="true"><input type="text" name="b_70868a220aae369c6d345246a_38fe2c6f18" tabindex="-1" defaultValue=""/></div>
+                    <div class="clear"><input class = "submit-btn button" type="submit" defaultValue="Subscribe" name="subscribe" id="mc-embedded-subscribe"/></div>
                   </div>
                 </form>
               </div>

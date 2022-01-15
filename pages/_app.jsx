@@ -6,11 +6,10 @@ import Layout from '../components/Layout';
 
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import initFontAwesome from '../utils/initFontAwesome';
-//import './styles.css';
+import '../styles/globals.css';
 
 initFontAwesome();
 
-import './appstyles.css'
 export default function App({ Component, pageProps }) {
   return (
     <>

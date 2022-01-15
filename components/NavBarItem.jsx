@@ -4,12 +4,11 @@ import { useRouter } from 'next/router';
 
 const NavBarItem = ({ children, href, className, icon, tabIndex, testId }) => {
   const router = useRouter();
-  const activeClass = 'navbar-item-active';
+  const activeClass = 'active';
   const activeClasses = className ? `${className} ${activeClass}` : activeClass;
 
   return (
-    <span className="d-inline-flex align-items-center navbar-item">
-      
+    <span>
       <span className={router.asPath === href ? activeClasses : className} tabIndex={tabIndex} data-testid={testId}>
         {children}
       </span>

@@ -1,18 +1,10 @@
 import React from 'react';
 
-import Hero from '../components/Hero';
 import Content from '../components/Content';
-
-import girlsTech from '../empowher-assets/img/girls-tech.png'; // with import
-import styles from './css.module.css'
-
 
 export default function Index() {
   return (
     <>
-      
-
-
 <div class="container-fluid">
 	<div class = "row">
 		<div class = "col-md-8 col-sm-12 col-xs-12 competition-header">
@@ -24,12 +16,12 @@ export default function Index() {
 <div class = "container">
 	<div class = "row">
 		<div class = "col-md-5 col-sm-12 col-xs-12">
-			<h3 id = {styles.blue}>What is EmpowHer?</h3>
+			<h3 id = "blue">What is EmpowHer?</h3>
 			<p>EmpowHer is a year-long competition for high school girls to create a STEM project that benefits their community! Teams can submit their projects for consideration for our national awards in May 2021!</p>
 		</div>
 
 		<div class = "col-md-7">
-			<img class = "girls-tech" src = {girlsTech} />
+			<img class = "girls-tech" src = "empowher-assets/img/girls-tech.png"/>
 		</div>
 	</div>
 </div>
@@ -143,19 +135,19 @@ export default function Index() {
 				<div class = "step-1">
 					<img class = "timeline-img" src = "empowher-assets/img/clock.svg"/>
 					<div class = "right-padding">
-						<p>Submission Deadline • May 31, 2021</p>
+						<p>Submission Deadline • June 20, 2022</p>
 					</div>
 				</div>
 				<div class = "step-1">
 					<img  class = "timeline-img" src = "empowher-assets/img/clock.svg"/>
 					<div class = "right-padding">
-						<p>Finalists Announced • June 30, 2021</p>
+						<p>Finalists Announced • July 15, 2022</p>
 					</div>
 				</div>
 				<div class = "step-1">
 					<img  class = "timeline-img" src = "empowher-assets/img/clock.svg"/>
 					<div class = "right-padding">
-						<p>Virtual Award Ceremony • July 15, 2021</p>
+						<p>Virtual Award Ceremony • July 31, 2022</p>
 					</div>
 				</div>
 

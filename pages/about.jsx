@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Hero from '../components/Hero';
 import Content from '../components/Content';
 
 export default function Index() {
@@ -17,9 +16,9 @@ export default function Index() {
     <div class = "row">
       <div class = "col-md-7 wow" data-wow-delay="0.3s">
         <video id="myVideo" width="100%" controls autoplay loop="true">
-          <source src="empowher-assets/files/MetroHacks Promo.mp4">
+          <source src={"../empowher-assets/files/MetroHacks Promo.mp4"}/>
           Your browser does not support video</video>
-          <script src="empowher-assets/js/video.js"> </script>
+          <script src={"../empowher-assets/js/video.js"}> </script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/vissense/0.9.0/vissense.js"></script>
         </div>
 
@@ -39,7 +38,7 @@ export default function Index() {
       <div class = "col-lg-3 col-md-6 col-sm-6 col-xs-12">
         <div class = "team__card-margin">
           <div class="team__card">
-            <img class="team__card-image" src="empowher-assets/img/team/sruthi.png" width="140" height="143" alt="Sruthi Kurada"><p class="team__card-name-text">Sruthi Kurada</p>
+            <img class="team__card-image" src="empowher-assets/img/team/sruthi.png" width="140" height="143" alt="Sruthi Kurada"/><p class="team__card-name-text">Sruthi Kurada</p>
             <p class="team__card-title-text">Executive Director</p>
             <a class="fab fa-linkedin social-links" href="https://www.linkedin.com/in/sruthi-kurada/" target="_blank"></a>
           </div>
@@ -48,7 +47,7 @@ export default function Index() {
       <div class = "col-lg-3 col-md-6 col-sm-6 col-xs-12">
         <div class = "team__card-margin">
           <div class="team__card">
-            <img class="team__card-image" src="empowher-assets/img/team/anna.png" width="140" height="143" alt="Anna Grankin"><p class="team__card-name-text">Anna Grankin</p>
+            <img class="team__card-image" src="empowher-assets/img/team/anna.png" width="140" height="143" alt="Anna Grankin"/><p class="team__card-name-text">Anna Grankin</p>
             <p class="team__card-title-text">Curriculum Director</p>
             <a class="fab fa-linkedin social-links" href="https://www.linkedin.com/in/anna-grankin-514826198/" target="_blank"></a>
           </div>
@@ -58,7 +57,7 @@ export default function Index() {
       <div class = "col-lg-3 col-md-6 col-sm-6 col-xs-12">
         <div class = "team__card-margin">
           <div class="team__card">
-            <img class="team__card-image" src="empowher-assets/img/team/adhrija.png" width="140" height="143" alt="Adhrija Anbu"><p class="team__card-name-text">Adhrija Anbu</p>
+            <img class="team__card-image" src="empowher-assets/img/team/adhrija.png" width="140" height="143" alt="Adhrija Anbu"/><p class="team__card-name-text">Adhrija Anbu</p>
             <p class="team__card-title-text">Lead Marketing Director</p>
             <a class="fab fa-linkedin social-links" href="https://www.linkedin.com/in/adhrija-anbuchelian-7ba8721b8/" target="_blank"></a>
           </div>
@@ -68,7 +67,7 @@ export default function Index() {
       <div class = "col-lg-3 col-md-6 col-sm-6 col-xs-12">
         <div class = "team__card-margin">
           <div class="team__card">
-            <img class="team__card-image" src="empowher-assets/img/team/varsha.jpg" width="140" height="143" alt="Varsha Jacob"><p class="team__card-name-text">Varsha Jacob</p>
+            <img class="team__card-image" src="empowher-assets/img/team/varsha.jpg" width="140" height="143" alt="Varsha Jacob"/><p class="team__card-name-text">Varsha Jacob</p>
             <p class="team__card-title-text">Technology Director</p>
             <a class="fab fa-linkedin social-links" href="https://www.linkedin.com/in/varsha-jacob-028102203" target="_blank"></a>
           </div>
@@ -78,7 +77,7 @@ export default function Index() {
       <div class = "col-lg-3 col-md-6 col-sm-6 col-xs-12">
         <div class = "team__card-margin">
           <div class="team__card">
-            <img class="team__card-image" src="empowher-assets/img/team/sonum.jpeg" width="140" height="143" alt="Sonum Agarwal"><p class="team__card-name-text">Sonum Agarwal</p>
+            <img class="team__card-image" src="empowher-assets/img/team/sonum.jpeg" width="140" height="143" alt="Sonum Agarwal"/><p class="team__card-name-text">Sonum Agarwal</p>
             <p class="team__card-title-text">Marketing Director</p>
             <a class="fab fa-linkedin social-links" href="https://www.linkedin.com/in/sonum-agarwal-8181851ba/" target="_blank"></a>
           </div>
@@ -88,9 +87,39 @@ export default function Index() {
       <div class = "col-lg-3 col-md-6 col-sm-6 col-xs-12">
         <div class = "team__card-margin">
           <div class="team__card">
-            <img class="team__card-image" src="empowher-assets/img/team/anoushka.png" width="140" height="143" alt="Anoushka Das"><p class="team__card-name-text">Anoushka Das</p>
+            <img class="team__card-image" src="empowher-assets/img/team/yashas.png" width="140" height="143" alt="Yashas Veedhulur"/><p class="team__card-name-text">Yashas Veedhulur</p>
+            <p class="team__card-title-text">Sponsorship Director</p>
+            <a class="fab fa-linkedin social-links" href="https://www.linkedin.com/in/yashas-veedhulur-34421a1ba/" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class = "col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <div class = "team__card-margin">
+          <div class="team__card">
+            <img class="team__card-image" src="empowher-assets/img/team/anoushka.png" width="140" height="143" alt="Anoushka Das"/><p class="team__card-name-text">Anoushka Das</p>
             <p class="team__card-title-text">Marketing Director</p>
             <a class="fab fa-linkedin social-links" href="https://www.linkedin.com/in/anoushka-das-a3746722a/" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class = "col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <div class = "team__card-margin">
+          <div class="team__card">
+            <img class="team__card-image" src="empowher-assets/img/team/saakshi.png" width="140" height="143" alt="Saakshi Challa"/><p class="team__card-name-text">Saakshi Challa</p>
+            <p class="team__card-title-text">Sponsorship Director</p>
+            <a class="fab fa-linkedin social-links" href="https://www.linkedin.com/in/saakshi-challa-17b8531b8/" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class = "col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <div class = "team__card-margin">
+          <div class="team__card">
+            <img class="team__card-image" src="empowher-assets/img/team/siri.png" width="140" height="143" alt="Siri Ponna"/><p class="team__card-name-text">Siri Ponna</p>
+            <p class="team__card-title-text">Marketing Director</p>
+            <a class="fab fa-linkedin social-links" href="" target="_blank"></a>
           </div>
         </div>
       </div>
@@ -118,7 +147,7 @@ export default function Index() {
             <div class="item center">
               <div class="testimonial-item">
                 <div class="img-thumb">
-                  <img src="empowher-assets/img/participants.svg">
+                  <img src="empowher-assets/img/participants.svg"/>
                 </div>
                 <h3 class="info">Participate</h3>
                 <div class="center content">
@@ -135,7 +164,7 @@ export default function Index() {
             <div class="item center">
               <div class="testimonial-item">
                 <div class="img-thumb">
-                  <img src="empowher-assets/img/mentors.svg">
+                  <img src="empowher-assets/img/mentors.svg"/>
                 </div>
                 <h3 class="info">Mentor</h3>
                 <div class="center content">
