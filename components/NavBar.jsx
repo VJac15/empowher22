@@ -33,6 +33,7 @@ const NavBar = () => {
     </button>
     <div class="collapse navbar-collapse" id="basicExampleNav">
     <ul class="navbar-nav ml-auto">
+    
     <li class="nav-item">
     <NavItem>
     <PageLink href="/" className="nav-link" testId="navbar-home" class = "item">
@@ -94,9 +95,7 @@ const NavBar = () => {
     </li>
 
 
-    </ul>
-    </div>
-    </nav>
+    <li>
     <Nav className="d-none d-md-block" navbar>
     {!isLoading && !user && (
       <NavItem id="qsLoginBtn">
@@ -189,8 +188,15 @@ const NavBar = () => {
       </NavItem>
       </Nav>
       )}
+      </li>
+      </ul>
+    </div>
+    
+    
+    
 
 
+</nav>
     </Navbar>
     </div>
   );
