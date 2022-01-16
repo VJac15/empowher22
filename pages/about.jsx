@@ -1,8 +1,13 @@
 import React from 'react';
 
 import Content from '../components/Content';
+import useScript from '../hooks/useScript';
+
 
 export default function Index() {
+  useScript('empowher-assets/js/video.js');
+  useScript('https://cdnjs.cloudflare.com/ajax/libs/vissense/0.9.0/vissense.js');
+
   return (
     <>
       <div class="container-fluid">
@@ -18,8 +23,6 @@ export default function Index() {
         <video id="myVideo" width="100%" controls autoplay loop="true">
           <source src={"../empowher-assets/files/MetroHacks Promo.mp4"}/>
           Your browser does not support video</video>
-          <script src={"../empowher-assets/js/video.js"}> </script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/vissense/0.9.0/vissense.js"></script>
         </div>
 
         <div class = "col-md-5 col-sm-12 col-xs-12">

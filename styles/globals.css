@@ -49,8 +49,6 @@ nav {
   text-decoration: none;
   color: black;
   font-family: 'glindifference';
-  margin-right: 7.5px;
-  margin-left: 7.5px;
   letter-spacing: 0.1em;
 }
 
@@ -247,8 +245,8 @@ nav {
   box-shadow: 3px 0 8px rgba(122, 134, 142, 0.15),
   0 4px 4px rgba(122, 134, 142, 0.15);
   border-radius: 31px;
-  padding-top: 8%;
-  padding-bottom: 6%;
+  padding-top: 20px;
+  padding-bottom: 15px;
   margin: 0 auto;
 }
 
@@ -510,6 +508,14 @@ footer h2, h3 {
 
 .segment-four .submit-btn:hover {
   opacity: 0.7;
+}
+
+.segment-four .clear {
+  display: none;
+}
+
+.segment-four .row-success {
+  margin-top: 5px;
 }
 
 .footer-bottom-text {

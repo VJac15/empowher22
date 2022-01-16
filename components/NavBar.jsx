@@ -17,16 +17,19 @@ import { useUser } from '@auth0/nextjs-auth0';
 import PageLink from './PageLink';
 import AnchorLink from './AnchorLink';
 
+import useScript from '../hooks/useScript';
+
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { user, isLoading } = useUser();
   const toggle = () => setIsOpen(!isOpen);
+  useScript('https://code.jquery.com/jquery-3.5.1.slim.min.js');
+  useScript('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js');
+  useScript('https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js');
 
   return (
-    <div className="nav-container" data-testid="navbar" class="nav-container">
-    <Navbar light expand="md">
     <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top primary-color" navbar data-testid="navbar-items">
-    <a class="navbar-brand" href="#"><img src = "empowher-assets/img/logo.png"/></a>
+    <a class="navbar-brand" href=""><img src = "empowher-assets/img/logo.png"/></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
     aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -191,14 +194,7 @@ const NavBar = () => {
       </li>
       </ul>
     </div>
-    
-    
-    
-
-
 </nav>
-    </Navbar>
-    </div>
   );
 };
 

@@ -1,7 +1,31 @@
 import React from 'react';
+import useScript from '../hooks/useScript';
 
-const Footer = () => (
-  <footer data-testid="footer">
+const Search = () => {
+  const [showResults, setShowResults] = React.useState(false)
+  const onClick = () => setShowResults(true)
+  return (
+    <>
+      <div class="ml-form-embedSubmit">
+        <button type="submit" class="primary submit-btn" onClick={onClick}>Subscribe</button>
+        <button disabled="disabled" type="button" class="loading clear"> <div class="ml-form-embedSubmitLoad"></div> <span class="sr-only">Loading...</span></button>
+      </div>
+      { showResults ? 
+        <div class="ml-form-successBody row-success">
+          <div class="ml-form-successContent">
+              <p>Thank you! Please confirm your subscription by verifying your email.</p>
+          </div>
+        </div> : null }
+    </>
+  )
+}
+
+const Footer = props => {
+  useScript('https://static.mailerlite.com/js/w/webforms.min.js?v0c75f831c56857441820dcec3163967c');
+
+  return (
+    <>
+    <footer data-testid="footer">
     <div class = "footer-top">
       <div class = "container">
         <div class = "row">
@@ -47,22 +71,26 @@ const Footer = () => (
           <div class = "col-lg-3 col-md-3 col-sm-6 col-xs-12 segment-four md-mb-30 sm-mb-30">
             <h3>Our Newsletter</h3>
             <p>Please sign up on our newsletter to get info for our latest competitions!</p>
-            <div class="input-group">
-              <div id="mc_embed_signup">
-                <form action="https://metrohacks.us12.list-manage.com/subscribe/post?u=70868a220aae369c6d345246a&amp;id=38fe2c6f18" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                  <div id="mc_embed_signup_scroll">
 
-                    <div class="mc-field-group">
-                      <input class = "email-txtbox" placeholder="Email" type="email" defaultValue="" name="EMAIL" id="mce-EMAIL"/>
-                    </div>
-                    <div id="mce-responses" class="clear">
-                      <div class="response" id="mce-error-response"></div>
-                      <div class="response" id="mce-success-response"></div>
-                    </div>
-                    <div class = "subscribe-form" aria-hidden="true"><input type="text" name="b_70868a220aae369c6d345246a_38fe2c6f18" tabindex="-1" defaultValue=""/></div>
-                    <div class="clear"><input class = "submit-btn button" type="submit" defaultValue="Subscribe" name="subscribe" id="mc-embedded-subscribe"/></div>
+            <div id="mlb2-5301776" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-5301776">
+              <div class="ml-form-align-center">
+                <div class="ml-form-embedWrapper embedForm">
+                  <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+                    <div class="ml-form-embedContent"></div>
+                    <form class="ml-block-form" action="https://static.mailerlite.com/webforms/submit/x6h1p9" data-code="x6h1p9" method="post" target="_blank">
+                      <div class="ml-form-formContent">
+                        <div class="ml-form-fieldRow ml-last-item">
+                          <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                            <input aria-label="email" aria-required="true" type="email" class="email-txtbox" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email"/>
+                          </div>
+                        </div>
+                      </div>
+                      <input type="hidden" name="ml-submit" value="1"/>
+                      <Search />
+                      <input type="hidden" name="anticsrf" value="true"/>
+                    </form>
                   </div>
-                </form>
+                </div>
               </div>
             </div>
           </div>
@@ -72,6 +100,11 @@ const Footer = () => (
 
     <p class = "footer-bottom-text">&copy; MetroHacks 2022 • Made with ♥ in Boston</p>
   </footer>
-);
+    </>
+
+    )
+
+  
+};
 
 export default Footer;

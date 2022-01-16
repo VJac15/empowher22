@@ -23,7 +23,7 @@ export default withPageAuthRequired(function SSRPage() {
           <h3 id = "black">⭐ Getting Started!</h3>
           <p>Watch out Student Opening Ceremony Video! This video has all the information about how EmpowHer will be structured this year.</p>
           <h3 id = "black">➡️ Join our Slack channel!</h3>
-          <p>Once you're in <a href = "">Slack</a>, make sure to do the following:</p>
+          <p>Once you're in <a href = "https://join.slack.com/t/empowher2022/shared_invite/zt-11r8tsmaq-MESmu2IkqiR6Hz2s8nZuVg">Slack</a>, make sure to do the following:</p>
           <ul class = "honorable-mentions">
           <li>Catch up on the #announcements channel</li>
           <li>Check out the Pinned messages for every channel</li>
