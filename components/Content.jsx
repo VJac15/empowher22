@@ -1,7 +1,12 @@
 import React from 'react';
 
+import { useUser } from '@auth0/nextjs-auth0';
+import AnchorLink from './AnchorLink';
 
-const Content = () => (
+
+const Content = () => {
+  const { user, isLoading } = useUser();
+  return (
   <>
   <div class="top-frame">
   <div class = "container jumbotron-top">
@@ -14,13 +19,14 @@ const Content = () => (
         <div class = "col-md-3 col-sm-12 col-xs-12"></div>
         <div class = "col-md-3 col-sm-12 col-xs-12 center spacing-home">
           <div class="content">
-            <a class = "home-button" target = "_blank" href="https://metrohacks-empowher-participant-portal.github.io" target="_blank">REGISTER</a>
+            {!user && (<a class = "home-button" href="/api/auth/login" tabIndex={0} testId="navbar-login-desktop">REGISTER</a>)}
+          
           </div>
         </div>
         <div class = "col-md-3 col-sm-12 col-xs-12 center spacing-home">
 
           <div class="content">
-            <a class = "home-button" href="https://forms.gle/rBY6bvWYA7D3hZ3R9" target="_blank">MENTOR</a>
+            {!user && (<a class = "home-button" href="https://forms.gle/rBY6bvWYA7D3hZ3R9" target="_blank">MENTOR</a>)}
           </div>
         </div>
         <div class = "col-md-3 col-sm-12 col-xs-12"></div>
@@ -120,6 +126,7 @@ const Content = () => (
       </div>
       </section>
       </>
-);
+); 
+          }
 
 export default Content;
