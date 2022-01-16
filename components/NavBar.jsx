@@ -26,6 +26,7 @@ const NavBar = () => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
+    <>
     <nav class="navbar navbar-expand-xl navbar-dark navbar-fixed-top primary-color" navbar data-testid="navbar-items">
     <a class="navbar-brand" href=""><img src = "empowher-assets/img/logo.png"/></a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#basicExampleNav"
@@ -137,6 +138,7 @@ const NavBar = () => {
       </ul>
     </div>
 </nav>
+</>
   );
 };
 
