@@ -28,6 +28,10 @@ const NavBar = () => {
   useScript('https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js');
 
   return (
+    <>
+
+
+    
     <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top primary-color" navbar data-testid="navbar-items">
     <a class="navbar-brand" href=""><img src = "empowher-assets/img/logo.png"/></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
@@ -195,6 +199,7 @@ const NavBar = () => {
       </ul>
     </div>
 </nav>
+</>
   );
 };
 
