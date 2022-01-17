@@ -28,9 +28,9 @@ const Content = () => {
             <a class = "home-button" href="https://forms.gle/rBY6bvWYA7D3hZ3R9" target="_blank">MENTOR</a>
           </div>
         </div></>)}
-        {user && (<><div class = "col-md-3 col-sm-12 col-xs-12 center spacing-home">
+        {user && (<><div class = "col-md-12 col-sm-12 col-xs-12 center spacing-home">
           <div class="content">
-            <a class = "home-button" href="/members" tabIndex={0} testId="navbar-login-desktop">MEMBERS AREA</a>
+            <a class = "home-button" href="/members" tabIndex={0} testId="navbar-login-desktop">PARTICIPANTS ᐅ</a>
           </div>
         </div></>)}
         

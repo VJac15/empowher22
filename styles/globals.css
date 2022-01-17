@@ -542,7 +542,7 @@ footer h2, h3 {
   text-decoration: none;
   text-align: center;
   background-color: #b8b8f3;
-  width: 10em;
+  width: 12em;
   display: block;
   margin: auto;
 }
@@ -654,9 +654,18 @@ footer h2, h3 {
   color: black;
 }
 
-.dropdown-item{
+.custom-dropdown-text {
+  color: black;
+}
+
+.custom-dropdown-item{
   color: black;
   padding: 0px;
+}
+
+.custom-dropdown-item:active {
+  color: black;
+  background-color: transparent;
 }
 
 /* do not group these rules */

@@ -16,26 +16,24 @@ function Profile() {
       {isLoading && <Loading />}
       {user && (
         <>
-          <Row className="align-items-center profile-header mb-5 text-center text-md-left" data-testid="profile">
-            <Col md={2}>
-              <img
+
+    <div class="container">
+
+    <div class = "row">
+      <div class = "col-md-3 col-sm-12 col-xs-12">
+      <img
                 src={user.picture}
                 alt="Profile"
-                className="rounded-circle img-fluid profile-picture mb-3 mb-md-0"
-                decode="async"
+                className="rounded-circle"
                 data-testid="profile-picture"
               />
-            </Col>
-            <Col md>
-              <h2 data-testid="profile-name">{user.name}</h2>
-              <p className="lead text-muted" data-testid="profile-email">
-                {user.email}
-              </p>
-            </Col>
-          </Row>
-          <Row data-testid="profile-json">
-            
-          </Row>
+      </div>
+      <div class = "col-md-9 col-sm-12 col-xs-12">
+          <h3 id = "black">Profile Information</h3>
+          <p>Name: {user.name}</p>
+      </div>
+    </div>
+  </div>
         </>
       )}
     </>

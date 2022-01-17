@@ -117,16 +117,16 @@ const NavBar = () => {
       />
       </DropdownToggle>
       <DropdownMenu>
-      <DropdownItem header class = "dropdown-text">
+      <DropdownItem header class = "custom-dropdown-text">
       {user.name}
       </DropdownItem>
       <DropdownItem>
-      <PageLink href="/profile" icon="user" testId="navbar-profile-desktop" className = "dropdown-item dd">
+      <PageLink href="/profile" icon="user" testId="navbar-profile-desktop" className = "custom-dropdown-item">
       Profile
       </PageLink>
       </DropdownItem>
       <DropdownItem>
-      <AnchorLink href="/api/auth/logout" icon="power-off" testId="navbar-logout-desktop" className = "dropdown-item">
+      <AnchorLink href="/api/auth/logout" icon="power-off" testId="navbar-logout-desktop" className = "custom-dropdown-item">
       Log out
       </AnchorLink>
       </DropdownItem>

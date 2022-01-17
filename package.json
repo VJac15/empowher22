@@ -35,6 +35,7 @@
     "nodemon": "^2.0.7",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-responsive-carousel": "^3.2.22",
     "reactstrap": "^8.8.1"
   },
   "devDependencies": {
