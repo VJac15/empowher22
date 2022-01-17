@@ -1,5 +1,6 @@
 {
-  "name": "auth0-nextjs-sample",
+  "name": "EmpowHer",
+  "homepage": "https://empowher.metrohacks.org",
   "version": "0.1.0",
   "private": true,
   "scripts": {
