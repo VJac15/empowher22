@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/metrujrc/empowher.metrohacks.org/
-    - /bin/cp -R * $DEPLOYPATH

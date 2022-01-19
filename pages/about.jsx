@@ -117,14 +117,28 @@ export default function Index() {
         </div>
       </div>
 
-      <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class = "col-lg-3 col-md-0 col-sm-0 col-xs-0">
+      </div>
+
+      <div class = "col-lg-3 col-md-6 col-sm-12 col-xs-12">
         <div class = "team__card-margin">
           <div class="team__card">
             <img class="team__card-image" src="empowher-assets/img/team/siri.png" width="140" height="143" alt="Siri Ponna"/><p class="team__card-name-text">Siri Ponna</p>
             <p class="team__card-title-text">Marketing Director</p>
-            <a class="fab fa-linkedin social-links" href="" target="_blank"></a>
           </div>
         </div>
+      </div>
+
+      <div class = "col-lg-3 col-md-6 col-sm-12 col-xs-12">
+        <div class = "team__card-margin">
+          <div class="team__card">
+            <img class="team__card-image" src="empowher-assets/img/team/nitya.png" width="140" height="143" alt="Nitya Ponnada"/><p class="team__card-name-text">Nitya Ponnada</p>
+            <p class="team__card-title-text">Marketing Director</p>
+          </div>
+        </div>
+      </div>
+
+      <div class = "col-lg-3 col-md-0 col-sm-0 col-xs-0">
       </div>
     </div>
   </div>

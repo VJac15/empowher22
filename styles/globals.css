@@ -50,7 +50,6 @@ nav {
   color: black;
   font-family: 'glindifference';
   letter-spacing: 0.1em;
-  margin-top: 3px;
 }
 
 .nav-link:hover {
@@ -93,6 +92,7 @@ nav {
 
 .profile {
   width: 150px;
+  margin-top: 5px;
 }
 
 .nav-user-profile {
