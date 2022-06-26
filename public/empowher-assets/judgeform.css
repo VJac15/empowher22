@@ -1,0 +1,20 @@
+.judges{
+    border-style: solid;
+    border-color: white;
+
+    margin-left: 20px;
+
+}
+
+
+#name{
+    margin-left: -25px;
+}
+
+#professional-info{
+    margin-left: -14px;
+}
+
+th{
+    text-align: center;
+}
